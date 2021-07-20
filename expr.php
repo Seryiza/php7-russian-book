@@ -48,3 +48,19 @@ var_export($p);
 //     'num' => 123,
 // ));
 // var_export($pFromVarExport);
+
+$str = "so
+long
+string";
+
+print_r($str);
+
+var_dump(gettype(2 / 2)); // integer
+var_dump(gettype(2 / 2.0)); // double
+var_dump(3 == true); // true
+var_dump([1, 2] == [1, 2]); // true
+var_dump([1, 2] === [1, 2]); //true
+var_dump(0 || 100 || 200); // true
+var_dump($undefinedVar ?: 'wow'); // wow
+var_dump($undefinedVar);
+var_dump([1][1] ?? 'wow 2'); // wow 2
